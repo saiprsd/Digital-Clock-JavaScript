@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("background.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+section h1 {
+  position: absolute;
+  font-size: 40px;
+  word-spacing: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  top: 200px;
+  color: #fff;
+}
+
+section .container div {
+  height: 250px;
+  width: 250px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  backdrop-filter: blur(25px);
+  margin-right: 20px;
+  text-align: center;
+  font-size: 64.5px;
+  color: #fff;
+  position: relative;
+  top: 80px;
+  border-radius: 25px;
+}
+
+.container p {
+  position: relative;
+  top: 80px;
+}
+
+.container span {
+  position: relative;
+  top: 100px;
+  font-size: 25px;
+  text-transform: uppercase;
+  border-top: 1px solid #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media only screen and (max-width: 500px) {
+  section {
+    width: 100%;
+  }
+
+  section h1 {
+    position: absolute;
+    font-size: 20px;
+    word-spacing: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    top: 150px;
+    color: #fff;
+  }
+
+  section .container {
+    display: block;
+  }
+
+  section .container div {
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 64.5px;
+    color: #2980B9;
+    position: relative;
+    top: 80px;
+  }
+
+  .container p {
+    position: relative;
+    top: 25px;
+    font-size: 25px;
+  }
+
+  .container span {
+    position: relative;
+    top: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
